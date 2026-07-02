@@ -67,13 +67,13 @@ dictionary_name = {
 
     student["Email"] = "codingwithamar@gmail.com"
     student["Age"] = 21
-
     print(student)
+    student["Age"] = 31
 
     # ============================================================
     heading("Delete Dictionary Values")
 
-    del student["Age"]
+    del student['Age']
 
     print(student)
 
