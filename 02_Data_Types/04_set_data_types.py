@@ -1,60 +1,65 @@
-# This code created by codingwithamar@gmail.com
-# Path : python_system_programming/02_Data_Types/04_set_data_types.py
-'''
-Subject : Set Data Types
-'''
+# =============================================================================
+# Author  : codingwithamar@gmail.com
+# File    : 04_set_data_types.py
+# Path    : 02_Data_Types\04_set_data_types.py
+# Subject : Set Data Type 
+# Description : 
+# A set is an unordered collection used to store unique elements only, mainly for removing duplicates.
+# • Elements are unordered (no fixed index position).
+# • Sets are mutable (elements can be added or removed).
+# • Duplicate values are not allowed (Stores unique elements only
+# =============================================================================
 
-print('''A set is an unordered collection used to store unique elements only, mainly for removing duplicates.
-• Elements are unordered (no fixed index position).
-• Sets are mutable (elements can be added or removed).
-• Duplicate values are not allowed (Stores unique elements only)
-''')
+def heading(title):
+    print("\n" + "=" * 70)
+    print(f" {title}")
+    print("=" * 70)
 
-s = {10,20,20,30,40}
-print("S = ", s)    #40, 10, 20, 30 duplicate dropped
-print(type(s))
+def main():
+    s = {10,20,20,30,40} 
+    print("S = ", s)    #40, 10, 20, 30 duplicate dropped
+    print(type(s))
+    
+    heading("Operations in Set")
+    s.add(50)
+    print(s)    #{40, 10, 50, 20, 30}
+    #s.remove(60)    #if value not found Generate Key Error
+    s.discard(60)    #safe — no error if missing
+    print(len(s))
 
-print("----------Operations in Set------------")
-s.add(50)
-print(s)    #{40, 10, 50, 20, 30}
-#s.remove(60)    #if value not found Generate Key Error
-s.discard(60)   #safe — no error if missing
-print(len(s))
+    heading("Set Operation")
+    a = {1, 2, 3}
+    b = {2, 3, 1, 4}
+    print("A = ", a)
+    print("B = ", b)
 
-print("\n---------------Set Operation------------")
-a = {1, 2, 3}
-b = {2, 3, 1, 4}
-print("A = ", a)
-print("B = ", b)
+    print("Union : ", a | b)        # Union : {1, 2, 3, 4}  #Way 1
+    print("Union : ", a.union(b))   # Union : {1, 2, 3, 4}  #Way 2
 
-print("Union : ", a | b)        # Union : {1, 2, 3, 4}  #Way 1
-print("Union : ", a.union(b))   # Union : {1, 2, 3, 4}  #Way 2
+    print("Intersection : ", a & b )                    # Intersection : {1, 2, 3}    #Way 1
+    print("Intersection : ", a.intersection(b))         # Intersection : {1, 2, 3}    #Way 2
+    print("Intersection : ", set(a) & set(b))           # Intersection : {1, 2, 3}    #Way 3
+    print("Intersection : ", list(set([1, 2, 2, 3])))   # Intersection : {1, 2, 3}    #Way 4
 
-print("Intersection : ", a & b )                    # Intersection : {1, 2, 3}    #Way 1
-print("Intersection : ", a.intersection(b))         # Intersection : {1, 2, 3}    #Way 2
-print("Intersection : ", set(a) & set(b))           # Intersection : {1, 2, 3}    #Way 3
-print("Intersection : ", list(set([1, 2, 2, 3])))   # Intersection : {1, 2, 3}    #Way 4
+    print("Difference : ", b - a)                       # Difference : {4}      #Way 1
+    print("Difference : ", b.difference(a))             # Difference : {4}      #Way 2
+    print("Difference : ", a ^ b)                       # Difference : {4}      #Way 3
+    print("Difference : ", b.symmetric_difference(a))   # Difference : {4}      #Way 4
 
-print("Difference : ", b - a)                       # Difference : {4}      #Way 1
-print("Difference : ", b.difference(a))             # Difference : {4}      #Way 2
-print("Difference : ", a ^ b)                       # Difference : {4}      #Way 3
-print("Difference : ", b.symmetric_difference(a))   # Difference : {4}      #Way 4
+    heading("Subset / superset checks via boolean")
+    print(a.issubset(b))    # True  — all of a is in b
+    print(b.issubset(b))    # True  — all of b is in a
+    print("<=", a <= b)     # same as issubset
+    print(b.issuperset(a))  # True  — b contains all of a
+    print(a.isdisjoint(b))  # False — they share elements
+    print(">=", b >= a)     # same as issuperset
+    print(2 in a)           # 0(1) check lookup and return boolean
 
-print("\n---------Subset / superset checks via boolean-------------")
-print(a.issubset(b))    # True  — all of a is in b
-print(b.issubset(b))    # True  — all of b is in a
-print("<=", a <= b)     # same as issubset
-print(b.issuperset(a))  # True  — b contains all of a
-print(a.isdisjoint(b))  # False — they share elements
-print(">=", b >= a)     # same as issuperset
-print(2 in a)           # 0(1) check lookup and return boolean
-
-
-print("\n----------Another Common patterns--------------")
-print("---------power(square)-----------")
-#Way 1
-squares = {x**2 for x in range(6)}      
-print(squares)
+    print("-"*15, "Another Common patterns", "-"*15)
+    heading("power(square)")
+    #Way 1
+    squares = {x**2 for x in range(6)}      
+    print(squares)
 '''Description of code
 Step 1 : range(6) ha 0, 1, 2, 3, 4, 5 #This condition make this set 
 Step 2 : ** mean power(square)
@@ -72,8 +77,7 @@ for x in range(6):
     squares.add(x**2)
 print(squares)
 
-
-print("\n----------Odd & Evens--------------------")
+heading("Odd & Evens")
 values = {1, 2, 3, 4, 6, 7, 8, 10}
 print("Our values : ", values)
 evens = {x for x in values if x % 2 == 0}
@@ -100,6 +104,29 @@ Store x in set
 odd = {x for x in values if x % 2 != 0}
 print("Odd values : ", odd)
 
-print("\n----------Clear()-----------")
+heading("Clear()")
 values.clear()       #delete all element of set
 print("after used clear() : ", values)             #show set() for empty set
+
+numbers = frozenset({10,20,30})
+
+print(numbers)
+print(type(numbers))
+numbers.add(40)
+COLORS = frozenset({"RED","GREEN","BLUE"})
+data = {
+    frozenset({1,2,3}) : "Python"
+}
+print(data)
+
+
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
+
