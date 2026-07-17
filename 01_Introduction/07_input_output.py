@@ -8,6 +8,31 @@ print("Defination : Input means taking data from the user, and Output means disp
 print('''input() → for taking input     print() → for displaying output''')
 print("Syntax : variable = input('Message')\n")
 
+#End of input
+value = input()
+print(value)        #EOFError   
 
-name = input("Enter your pet name :")
-print("Your Pet Name is : ",name)
+#Simple Input
+name = input("Enter your pet name :")       #Enter your name: Amar
+print("Your Pet Name is : ",name)           #Amar   #Python Stored name = "Amar"
+
+#Problem Without Type Casting
+age = input("Enter age: ")
+print(age + 10)     #Type Error #Python Sense "20" + 10
+#Correct Way
+age = int(input("Enter age: "))     #Enter age: 20
+print(age + 10)                     #30
+
+#Using Float
+salary = float(input("Enter salary: "))     #Enter salary: 45000.50
+print(salary)                               #45000.5
+
+#Taking Multiple Values in One Line
+a, b = input("Enter two numbers: ").split()
+print(a)
+print(b)
+
+#Multiple Integers
+a, b = map(int, input("Enter two numbers: ").split())
+print(a + b)
+

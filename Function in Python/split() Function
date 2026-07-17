@@ -1,0 +1,28 @@
+# =============================================================================
+# Author  : codingwithamar@gmail.com
+# File    : split() Function
+# Path    : Python-Programming-Language\Function in Python\split() Function
+# Subject : Functions in Python
+# Description : split() function
+# =============================================================================
+
+def main():
+    text1 = "Apple Banana Mango"
+    print(text1.split())            #['Apple', 'Banana', 'Mango']
+
+    text2 = "Apple,Banana,Mango"
+    print(text2.split(","))         #['Apple', 'Banana', 'Mango']
+
+    date = "09-07-2026"
+    print(date.split("-"))          #['09', '07', '2026']
+
+    text = "Python Java C++ JavaScript"
+    print(text.split(" ", 2))       #['Python', 'Java', 'C++ JavaScript']
+    #Only two splits happen.
+
+    a, b = input("Enter two number : ").split()     #["10", "20"]
+    print("a is : ", a)
+    print("b is : ", b)
+
+if __name__ == "__main__":
+    main()
