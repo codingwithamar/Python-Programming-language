@@ -3,11 +3,11 @@
 # File    : 03_sequence_data_types.py
 # Path    : 02_Data_Types\03_sequence_data_types.py
 # Subject : Sequnece Data Types
-# Description : This is Master code of sequence data type
+# Description : This is Master code of sequence data type(list, tuple, range)
 # =============================================================================
 
 def heading(title):
-    print("\n" + "=" * 70)
+    print("\n" + "=" * 70) 
     print(f" {title}")
     print("=" * 70)
 
@@ -54,16 +54,22 @@ def main():
     print("Count appear of Value : ", number.count(20))     # 1   — how many times it appears
     number[0] = 99              #0th number value changed
     print("Update 0th index Value : ", number)
-    number.append(70)           #add value in end of list
+
+    number.append(70)           #add value in end of list   
     print("add value in end of list : ", number)
-    number.insert(2, 80)        #Insert 80 in 2nd array list
-    print("Insert 80 in 2nd array list : ", number)
-    number.extend([90,100])     #add multiple elements at the last of list
+
+    number.insert(2, 80)        #Insert 80 in 2nd array list    #append(Position,Value)
+    print("Insert 80 in 2nd array list : ", number) 
+
+    number.extend([90,100])     #add multiple elements at the last of list  #extend([multiple Values])
     print("add multiple elements at the last of list : ", number)
+
     number.remove(99)           #Remove perticular list value
     print("Remove perticular list value : ", number)
+
     number.pop()                #Remove last elements
     print("Remove last elements : ", number)           
+
     number.sort()               #sorting lower to higher
     print("sorting lower to higher : ", number)
     sorted(number)              #sorting lower to higher    

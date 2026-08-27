@@ -6,13 +6,6 @@
 # Description : test data types
 # =============================================================================
 
-def main():
-    pass
-
-
-if __name__ == "__main__":
-    main()
-
 """
 str — Text Sequence Type
 ------------------------
@@ -35,11 +28,43 @@ multiple lines'''
 s4 = """triple double — can also span
 multiple lines"""
 
-print(f"s1 = {s1!r}")
-print(f"s2 = {s2!r}")
-print(f"s3 = {s3!r}")
-print(f"s4 = {s4!r}")
+#f-string conversion flag
+print(f"s1 = {s1}")     #str(s1)
+print(f"s1 = {s1!r}")   #print(f"s1 = {repr(s1)}")
+print(f"s2 = {s2!s}")   #str(s1)
+print(f"s3 = {s3!a}")   #ascii(s1)
 print(f"type(s1) = {type(s1)}")         # <class 'str'>
+
+text = "line1\nline2\ttabbed"
+emoji_text = "héllo wörld 🙂"
+
+print("=== !s (str) ===")
+print(f"{text!s}")
+print(f"{emoji_text!s}")
+'''
+Above OUTPUT :
+=== !s (str) ===
+line1
+line2	tabbed
+héllo wörld 🙂'''
+
+print("\n=== !r (repr) ===")
+print(f"{text!r}")
+print(f"{emoji_text!r}")
+'''
+=== !r (repr) ===
+'line1\nline2\ttabbed'
+'héllo wörld 🙂'
+'''
+
+print("\n=== !a (ascii) ===")
+print(f"{text!a}")
+print(f"{emoji_text!a}")
+'''
+=== !a (ascii) ===
+'line1\nline2\ttabbed'
+'h\xe9llo w\xf6rld \U0001f642'
+'''
 
 # str() Constructor — converting other types to string
 print("\n-- str() Constructor --")
@@ -91,6 +116,7 @@ print(f"s[-1]    = {s[-1]!r}")      # 'n'
 print(f"type(s[0]) = {type(s[0])}")  # <class 'str'>
 
 # Slicing
+#print([start:end:jump])
 print(f"\n-- Slicing --")
 print(f"s[0:3]   = {s[0:3]!r}")    # 'Pyt'
 print(f"s[1:4]   = {s[1:4]!r}")    # 'yth'
@@ -212,7 +238,7 @@ print("=" * 60)
 print(f"ljust(10) : {'hi'.ljust(10)!r}")     # 'hi        '
 print(f"rjust(10) : {'hi'.rjust(10)!r}")     # '        hi'
 print(f"center(10): {'hi'.center(10)!r}")    # '    hi    '
-print(f"zfill(6)  : {'42'.zfill(6)!r}")      # '000042'
+print(f"zfill(6)  : {'42'.zfill(6)!r}")      # '000042' # fill zero to remaining left side 
 
 
 # ─────────────────────────────────────────────
