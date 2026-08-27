@@ -1,5 +1,17 @@
-# This code created by codingwithamar@gmail.com
-# Path : python_system_programming/02_Data_Types/01_numeric_data_types.py
+# =============================================================================
+# Author  : codingwithamar@gmail.com
+# File    : 01_numeric_data_types.py
+# Path    : Python-Programming-Language/02_Data_Types/01_numeric_data_types.py
+# Subject : Data Types in Python
+# Description : Numeric Data Types
+# =============================================================================
+
+def main():
+    pass
+
+
+if __name__ == "__main__":
+    main()
 '''
 Subject : Numeric Data types in Python(int, float, complex)
 '''

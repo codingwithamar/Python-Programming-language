@@ -1,10 +1,17 @@
-# ================================================================================
+# =============================================================================
 # Author  : codingwithamar@gmail.com
 # File    : 02_text_data_types.py
-# Path    : python_system_programming/02_Data_Types/
-# Subject : Text Sequence Type — str (String) in Python
-# Ref     : https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str
-# =================================================================================
+# Path    : Python-Programming-Language/02_Data_Types/02_text_data_types.py
+# Subject : Data Types in Python
+# Description : test data types
+# =============================================================================
+
+def main():
+    pass
+
+
+if __name__ == "__main__":
+    main()
 
 """
 str — Text Sequence Type
