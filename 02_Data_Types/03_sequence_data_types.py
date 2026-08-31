@@ -15,6 +15,10 @@ def main():
     heading("SEQUNECE DATA TYPE")
     print("Defination : Sequence Data Types are used to store multiple values in an ordered manner. Each element has a position called an index.\n")
 
+#----------------------------------------------------------------------------------------------------
+#										'List Sequnece Data Type'
+#----------------------------------------------------------------------------------------------------
+
     heading("TYPE 1 : LIST")
     print("Defination : A list is an ordered collection used to store multiple values in a single variable, and it allows modification after creation.")
     print("Allows duplicate values Uses square brackets [] Mutable (can be modified)")
@@ -23,13 +27,18 @@ def main():
     print(fruits)                                           #Printing
     print(type(fruits))                                     #Check data Type
 
-
+#________________________________________________________________________________
+#						'Indexing in List'
     heading("1.1 : Indexing in list sequence data types")
     name = ["A", "B", "C", "D"]
     print("1st element : ", name[0])      #1st element
     print("3rd Element : ", name[2])      #3rd Element
     print("last Element : ", name[-1])     #last Element
     print("Second last element : ", name[-2])     #Second last element
+#________________________________________________________________________________
+
+#________________________________________________________________________________
+#						'Slicing in List'
 
     heading("1.2 : Slicing in list sequence data type")
     print("Syntax : [start : stop : step]")
@@ -43,6 +52,10 @@ def main():
     print("2 to end : ",number[2:])     #30, 40, 50
     print("start to end with 2 DIfference : ",number[::2])  #10, 30, 50
     print("Reverse list ",number[::-1])                     #10, 30, 50  #Reversed list
+#________________________________________________________________________________
+
+#________________________________________________________________________________
+#				    'Other Random Operations in List'
 
     heading("1.3 : Other Operations in list Sequence data Types")
     print("Lenght of Number : ", len(number))          # 5
@@ -74,13 +87,20 @@ def main():
     print("sorting lower to higher : ", number)
     sorted(number)              #sorting lower to higher    
     print("sorting lower to higher :", number)
+#________________________________________________________________________________
 
+#________________________________________________________________________________
+#					        	'Looping In Sequence'
     heading("1.4 : Looping in Sequence")
     for i, item in enumerate(["a", "b", "c"]):
         print(i, item)                                      # 0 a / 1 b / 2 c   #with index
     for name, score in zip(["Amar", "Akshay"], [90, 85]):
         print(name, score)                                  # Amar 90  Akshay 90    
+#________________________________________________________________________________
 
+#----------------------------------------------------------------------------------------------------
+#										'Tuple In Sequence Data Type'
+#----------------------------------------------------------------------------------------------------
 
     heading("TYPE 2 : TUPLE(tuple)")
     print('''A tuple is similar to a list but is used when the data should not be changed after creation.
@@ -92,7 +112,12 @@ def main():
     print("Our Tuple - Colors  : ", colors)
     print("Check Type of Tuple : ", type(colors))
     #colors[1] = "Black"        #Error - Tuple not allows modification & updation
+    #colors.append("Green")     #Use case - modification is not allowed
+    #colors.remove("Red")       #Deletion also not allowed
 
+#----------------------------------------------------------------------------------------------------
+#										'Range in Sequence Data type'
+#----------------------------------------------------------------------------------------------------
 
     heading("TYPE 3 : RANGE")
     print('''Defination : The range data type represents a sequence of numbers and is commonly used in loops for iteration. 

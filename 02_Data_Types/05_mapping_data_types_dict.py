@@ -15,11 +15,11 @@ def heading(title):
 
 def main():
 
-    print('''Syntax :
-dictionary_name = {
+    print('''Syntax : 
+    dictionary_name = {
     "key1": "value1",
     "key2": "value2"
-}''')
+    }''')
 
     print("\n\n")
 

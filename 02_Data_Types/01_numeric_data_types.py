@@ -17,6 +17,10 @@ Subject : Numeric Data types in Python(int, float, complex)
 '''
 print("Used to store numeric values.\n")
 
+#----------------------------------------------------------------------------------------------------
+#										'Integer Data Type'
+#----------------------------------------------------------------------------------------------------
+
 print("---------integer-----------")
 
 #Whole numbers, positive or negative, with no size limit.
@@ -45,6 +49,10 @@ print(id(a))
 a = a + 5       
 print(id(a))
 
+#----------------------------------------------------------------------------------------------------
+#										'Arithmatic Operations Allow'
+#----------------------------------------------------------------------------------------------------
+
 print("\nArithmatic Operations Allow")
 a1 = 15
 b1 = 4
@@ -57,6 +65,10 @@ print(a1 // b1) #3
 print(a1 % b1)  #3
 print(a1 ** b1) #50625
 
+#----------------------------------------------------------------------------------------------------
+#										'Conversions in Numerics'
+#----------------------------------------------------------------------------------------------------
+
 print("\nConversion In Numerics")
 
 binary  = 0b1010    # base 2  → 10  #Code - 0b
@@ -64,6 +76,10 @@ octal   = 0o12      # base 8  → 10  #Code - 0o
 hexa    = 0xA       # base 16 → 10  #Code - 0xA
 
 print("Conversion - \nIn Binary(0b1010) : ", binary, "\nIn Octal(0o12) : ", octal, "\nIn Hexa(0xA) : ", hexa)   # 10 10 10
+
+#----------------------------------------------------------------------------------------------------
+#										'isinstance() for type varify'
+#----------------------------------------------------------------------------------------------------
 
 print("\nCheck Type of Variable and get return in boolean")
 x = 10
@@ -109,15 +125,29 @@ print(int(True))    #1
 #Invalid Conversions
 #int("abc")      #ValueError
 #int(3 + 4j)     #TypeError
+
+#----------------------------------------------------------------------------------------------------
+#										'isinstance() vs type()'
+#----------------------------------------------------------------------------------------------------
+
 print("\n isinstance vs type")
 print(type(isinsistancevalue) == int)               # True  — exact type check
 print(isinstance(isinsistancevalue, int))           # True  — also checks subclasses
 print(isinstance(isinsistancevalue, numbers.Real))  # True  — works across hierarchy
 
+#----------------------------------------------------------------------------------------------------
+#										'Float data type'
+#----------------------------------------------------------------------------------------------------
+
+
 print("\n---------float-------------")
 value2 = 111.11 #Decimal Values Allowed
 print("Value2 = ",value2)
 print(type(value2))
+
+#----------------------------------------------------------------------------------------------------
+#										'Complex Data type'
+#----------------------------------------------------------------------------------------------------
 
 print("\n---------complex-----------")
 value3 = 2 + 3j #real + imaginary(j) Values Allowed
