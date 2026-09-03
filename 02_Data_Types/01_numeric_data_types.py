@@ -66,7 +66,7 @@ print(a1 % b1)  #3
 print(a1 ** b1) #50625
 
 #----------------------------------------------------------------------------------------------------
-#										'Conversions in Numerics'
+#										'Representative of integer'
 #----------------------------------------------------------------------------------------------------
 
 print("\nConversion In Numerics")
@@ -76,6 +76,13 @@ octal   = 0o12      # base 8  → 10  #Code - 0o
 hexa    = 0xA       # base 16 → 10  #Code - 0xA
 
 print("Conversion - \nIn Binary(0b1010) : ", binary, "\nIn Octal(0o12) : ", octal, "\nIn Hexa(0xA) : ", hexa)   # 10 10 10
+
+a = 10
+b = 0b1010
+c = 0o12
+d = 0xA
+
+print(a, b, c, d)   #10 10 10 10
 
 #----------------------------------------------------------------------------------------------------
 #										'isinstance() for type varify'
