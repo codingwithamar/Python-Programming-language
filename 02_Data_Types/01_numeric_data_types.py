@@ -3,19 +3,12 @@
 # File    : 01_numeric_data_types.py
 # Path    : Python-Programming-Language/02_Data_Types/01_numeric_data_types.py
 # Subject : Data Types in Python
-# Description : Numeric Data Types
+# Description : Numeric Data types in Python(int, float, complex)
 # =============================================================================
 
 def main():
-    pass
-
-
-if __name__ == "__main__":
-    main()
-'''
-Subject : Numeric Data types in Python(int, float, complex)
-'''
-print("Used to store numeric values.\n")
+    
+    print("Used to store numeric values.\n")
 
 #----------------------------------------------------------------------------------------------------
 #										'Integer Data Type'
@@ -164,3 +157,6 @@ print("Substraction", a - b)   # Subtraction
 print("Multiplication", a * b)   # Multiplication
 print("Division", a / b)   # Division
 print("Modulus", a % b)   # Modulus
+
+if __name__ == "__main__":
+    main()
