@@ -24,23 +24,23 @@ ivalue3 = 10_000_000   # underscores allowed for readability Underscores are ign
 big = 10 ** 100   # googol — no problem with big value
 
 print("\nValue = ",ivalue)    #10
-print("Value1 = ",ivalue1)  #-50
-print("Value2 = ",ivalue2)  #0
-print("Value3 = ",ivalue3)  #10_000_000
-print("Big Value = ", big)        # 10000000000000000000000000000000000000000...
+print("Value1 = ",ivalue1)    #-50
+print("Value2 = ",ivalue2)    #0
+print("Value3 = ",ivalue3)    #10_000_000
+print("Big Value = ", big)    # 10000000000000000000000000000000000000000...
 
-print(type(ivalue))   # <class 'int'>
+print(type(ivalue))    # <class 'int'>
 print(type(ivalue1))   # <class 'int'>
 print(type(ivalue3))   # <class 'int'>
 print(type(ivalue2))   # <class 'int'>
-print(type(big))   # <class 'int'>
+print(type(big))       # <class 'int'>
 
 print("\nNumeric objects cannot be modified after creation in old memory address python allocate new address space")
 a = 10
-print(id(a))
+print(id(a))    #11370384
 
 a = a + 5       
-print(id(a))
+print(id(a))    #11370544
 
 #----------------------------------------------------------------------------------------------------
 #										'Arithmatic Operations Allow'
@@ -54,9 +54,9 @@ print(a1 + b1)  #19
 print(a1 - b1)  #10
 print(a1 * b1)  #60
 print(a1 / b1)  #3.75
-print(a1 // b1) #3
-print(a1 % b1)  #3
-print(a1 ** b1) #50625
+print(a1 // b1) #3  (if we want round figure value)
+print(a1 % b1)  #3  (Remaining Value)
+print(a1 ** b1) #50625  (Power - 15 * 15 * 15 * 15)
 
 #----------------------------------------------------------------------------------------------------
 #										'Representative of integer'
