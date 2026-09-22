@@ -35,7 +35,7 @@ def main():
     print("Percent:100%%")     #Percent: 100%   #literal
 
 #________________________________________________________________________________
-#						'Decimal specifier'
+#						'Non-Decimal specifier'
 
     #   integer
     age = 25
@@ -86,15 +86,17 @@ def main():
 #						'Multiple Specifier'
     print("Name: %s, Age: %d, Marks: %.1f" % (name, age, marks))
     # Name: Amar, Age: 25, Marks: 81.3
+
+    print("%d %.2f" %(age,marks))   #Multiple specifier write inside tuple
 #________________________________________________________________________________
 
 #________________________________________________________________________________
 #						'Width,Padding & Alignment'
     print("%10d" % 25)      #          25       /Width
     print("%05d" % 25)      # 00025     /Zero Paddings
-    print("% d" % 25)       
-    print("%+d" % 26)
-    print("%+d" % -27)
+    print("% d" % 25)       # 25        /Allignment
+    print("%+d" % 26)       #+26        /Sign
+    print("%+d" % -27)      #-27        /Sign
 #________________________________________________________________________________
 
 
