@@ -3,7 +3,7 @@
 # File    : 02_text_data_types.py
 # Path    : Python-Programming-Language/02_Data_Types/02_text_data_types.py
 # Subject : Data Types in Python
-# Description : test data types
+# Description : str — Text Sequence Type
 # =============================================================================
 
 """
@@ -31,9 +31,9 @@ multiple lines"""
 #f-string conversion flag
 print(f"s1 = {s1}")     #str(s1)
 print(f"s1 = {s1!r}")   #print(f"s1 = {repr(s1)}")
-print(f"s2 = {s2!s}")   #str(s1)
-print(f"s3 = {s3!a}")   #ascii(s1)
-print(f"type(s1) = {type(s1)}")         # <class 'str'>
+print(f"s2 = {s2!s}")   #str(s2)
+print(f"s3 = {s3!a}")   #ascii(s3)
+print(f"type(s1) = {type(s1)}")       # <class 'str'>
 
 text = "line1\nline2\ttabbed"
 emoji_text = "héllo wörld 🙂"
@@ -52,6 +52,7 @@ print("\n=== !r (repr) ===")
 print(f"{text!r}")
 print(f"{emoji_text!r}")
 '''
+Above OUTPUT :
 === !r (repr) ===
 'line1\nline2\ttabbed'
 'héllo wörld 🙂'
@@ -62,6 +63,7 @@ print(f"{text!a}")
 print(f"{emoji_text!a}")
 '''
 === !a (ascii) ===
+Above OUTPUT :
 'line1\nline2\ttabbed'
 'h\xe9llo w\xf6rld \U0001f642'
 '''
@@ -89,8 +91,8 @@ name = "Amar"
 # name[0] = "K"   ← TypeError: 'str' does not support item assignment
 
 # Correct way → build a new string
-name_modified = "K" + name[1:]
-print(f"Original  : {name!r}")
+name_modified = "K" + name[1:]  #This way is used for string modification
+print(f"Original  : {name!r}")  # 'Amar'
 print(f"Modified  : {name_modified!r}")   # 'Kmar'
 
 
@@ -108,7 +110,7 @@ s = "Python"
 
 # Indexing
 print(f"\n-- Indexing --")
-print(f"s        = {s!r}")
+print(f"s        = {s!r}")  # 'Python'
 print(f"s[0]     = {s[0]!r}")       # 'P'
 print(f"s[-1]    = {s[-1]!r}")      # 'n'
 
@@ -116,7 +118,7 @@ print(f"s[-1]    = {s[-1]!r}")      # 'n'
 print(f"type(s[0]) = {type(s[0])}")  # <class 'str'>
 
 # Slicing
-#print([start:end:jump])
+#print([start:end:jump])    # Syntax
 print(f"\n-- Slicing --")
 print(f"s[0:3]   = {s[0:3]!r}")    # 'Pyt'
 print(f"s[1:4]   = {s[1:4]!r}")    # 'yth'
@@ -139,8 +141,9 @@ print("PYTHON " * 3)               # PYTHON PYTHON PYTHON
 
 # Iteration
 print(f"\n-- Iteration --")
-for ch in "Amar":
+for ch in "Amar Bhandare":
     print(ch, end=" ")
+
 print()
 
 
