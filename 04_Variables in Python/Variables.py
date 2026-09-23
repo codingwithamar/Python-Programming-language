@@ -108,7 +108,19 @@ def main():
     name: str = "Amar"      #valid
     salary: float = 50000.0 #Valid
     #________________________________________________________________________________
-    
+
+    #________________________________________________________________________________
+    #						'Varibales name conventions'
+    #   1. Camel case convention :
+    varibleNameConvention = 1
+
+    #   2. Pascal case convention :
+    VariableNameConvention = 2
+
+    #   3. Snake case convention : 
+    variable_name_convention = 3
+    #________________________________________________________________________________
+        
 
 if __name__ == "__main__":
     main()
