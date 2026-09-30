@@ -161,6 +161,15 @@ def main():
         for value in row:
             print(value)    #1 2 3 4 5 6 7 8 9
 #________________________________________________________________________________
-    
+    print("\nelse in for loop")
+#________________________________________________________________________________
+#						'else in for loop '
+    #if break loop then else active
+    for i in range(5):
+        print(i)
+    else:
+        print("Loop completed")
+#________________________________________________________________________________
+
 if __name__ == "__main__":
     main()
