@@ -11,7 +11,10 @@ def main():
         #						        '1. type() function'
         # Basic type() example 1:
         x = 10
-        print(type(x))   # <class 'int'>
+        print(type(x))          # <class 'int'>
+        print(type(5))          # <class 'int'>
+        print(type("hello"))    # <class 'str'>
+        print(type([1, 2, 3]))  # <class 'list'>
 
         # %% Example 2: Validating input types before processing
 
