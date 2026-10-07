@@ -8,8 +8,8 @@
 
 def main():
     # %%________________________________________________________________________________
-    #						    'Synatx & Defination'
-    print("Defination -> Reads a line of text typed by the user from the keyboard, Always returns a string, no matter what is typed.")
+    #						    'Syntax & Defination'
+    print("Definition -> Reads a line of text typed by the user from the keyboard, Always returns a string, no matter what is typed.")
     print("Syntax -> input(prompt='')")
     #________________________________________________________________________________
     print("_"*150)
