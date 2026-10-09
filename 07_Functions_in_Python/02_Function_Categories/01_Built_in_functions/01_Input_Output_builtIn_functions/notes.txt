@@ -1,0 +1,1 @@
+This is the text file inside data New entry write inside file added this line
