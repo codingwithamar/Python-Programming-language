@@ -2,7 +2,7 @@
 # Author  : codingwithamar@gmail.com
 # File    : 10_all_and_any_BuiltIN_Functions.py
 # Path    : Python-Programming-Language/07_Functions_in_Python/02_Function_Categories/01_Built_in_functions/03_Data_Iteration_Processing_builtIn_functions/4_Testing_Ordering_Slicing/10_all_and_any_BuiltIN_Functions.py
-# Subject : Import functions in python
+# Subject : Built-in functions in python
 # Description : all(iterable) returns True if every item is true.
 #               any(iterable) returns True if at least one item is true.
 # =============================================================================
@@ -31,7 +31,8 @@ def main():
         print("checking", x)
         return x > 0
 
-    print(any(check(x) for x in [5, -1, 3]))    # prints "checking 5" then True; the rest are not checked
+    print(any(check(x) for x in [5, -1, 3]))    
+    # prints "checking 5" then True; the rest are not checked
 
     # IMPORTANT empty-iterable rules
     print(all([]))     # True  -> nothing is false

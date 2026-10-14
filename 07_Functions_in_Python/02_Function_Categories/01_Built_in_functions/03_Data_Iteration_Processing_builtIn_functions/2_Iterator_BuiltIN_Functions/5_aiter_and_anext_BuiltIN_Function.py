@@ -2,7 +2,7 @@
 # Author  : codingwithamar@gmail.com
 # File    : 5_aiter_and_anext_BuiltIN_Function.py
 # Path    : Python-Programming-Language/07_Functions_in_Python/02_Function_Categories/01_Built_in_functions/03_Data_Iteration_Processing_builtIn_functions/2_Iterator_BuiltIN_Functions/5_aiter_and_anext_BuiltIN_Function.py
-# Subject : Import functions in python
+# Subject : Built-in functions in python
 # Description : aiter() and anext() - These are the asynchronous versions of iter() and next()
 # =============================================================================
 

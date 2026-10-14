@@ -2,7 +2,7 @@
 # Author  : codingwithamar@gmail.com
 # File    : 9_filter_BuiltIN_Function.py
 # Path    : Python-Programming-Language/07_Functions_in_Python/02_Function_Categories/01_Built_in_functions/03_Data_Iteration_Processing_builtIn_functions/3_Combining_and_Transforming/9_filter_BuiltIN_Function.py
-# Subject : Import functions in python
+# Subject : Built-in functions in python
 # Description : filter() - Keeps only the items for which a function returns a true value.
 # =============================================================================
 
