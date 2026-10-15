@@ -1,7 +1,8 @@
 # =============================================================================
 # Author  : codingwithamar@gmail.com
 # File    : 2_min_BuiltIn_Function.py
-# Path    : Python-Programming-Language/07_Functions_in_Python/02_Function_Categories/01_Built_in_functions/04_Calculations_builtIn_functions/2_Totals_Functions/2_min_BuiltIn_Function.py
+# Path    : Python-Programming-Language/07_Functions_in_Python/02_Function_Categories/01_Built_in_functions/04_Calculations_builtIn_functions/2_Totals_Functions/6_min_7_max
+# _BuiltIn_Function.py
 # Subject : Built-in functions in python
 # Description : min( ), max( ) - Return the smallest and the largest item.
 # =============================================================================
