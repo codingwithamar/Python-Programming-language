@@ -14,5 +14,33 @@ def main():
     print(min(5, 2, 8))           # 2 -> you can pass values directly
     print(max("apple", "banana")) # banana -> strings compare alphabetically
 
+    # 1. key= decides what is compared
+    words = ["pear", "fig", "banana", "kiwi"]
+    print(max(words, key=len))      # banana
+    print(min(words, key=len))      # fig
+
+    # 2. Key with a dictionary: the name with the highest score
+    scores = {"a": 3, "b": 9, "c": 5}
+    print(max(scores, key=scores.get))     # b
+
+    # 3. default= avoids an error on an empty iterable
+    print(max([], default=0))       # 0
+    # max([])    -> ValueError
+
+    # 4. Ties: the FIRST item wins
+    print(max(["ab", "cd", "ef"], key=len))     # ab
+
+    # 5. Real automation use: find the newest log file
+    from pathlib import Path
+    newest = max(
+        Path(".").glob("*.log"),
+        key=lambda p: p.stat().st_mtime,
+        default=None,
+    )
+    print(newest)       # the newest .log file, or None if there are none
+
+    # 6. Mixed types cannot be compared
+    # max([1, "a"])      -> TypeError
+
 if __name__ == "__main__":
     main()
