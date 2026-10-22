@@ -10,7 +10,7 @@ from types import SimpleNamespace
 
 def main():
     def task():
-    pass
+        pass
 
     task.retries = 3
     delattr(task, "retries")
