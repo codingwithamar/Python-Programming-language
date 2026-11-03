@@ -1,7 +1,7 @@
 # =============================================================================
 # Author  : codingwithamar@gmail.com
 # File    : 02_Parameters_and_Arguments.py
-# Path    : Python-Programming-Language/07_Functions_in_Python/02_Function_Categories/02_User_defined_functions/01_User_Define_Function_Basics/02_Parameters_and_Arguments.py
+# Path    : Python-Programming-Language/07_Functions_in_Python/Group1_Build_the_function/02_Parameters_and_Arguments.py
 # Subject : User Define Function
 # Description : Parameters and Arguments
 # =============================================================================

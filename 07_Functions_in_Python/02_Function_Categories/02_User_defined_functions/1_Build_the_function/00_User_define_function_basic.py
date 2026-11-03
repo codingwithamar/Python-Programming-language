@@ -1,7 +1,7 @@
 # =============================================================================
 # Author  : codingwithamar@gmail.com
-# File    : 01_User_define_function_basic.py
-# Path    : Python-Programming-Language/07_Functions_in_Python/02_Function_Categories/02_User_defined_functions/01_User_Define_Function_Basics/01_User_define_function_basic.py
+# File    : 00_User_define_function_basic.py
+# Path    : Python-Programming-Language/07_Functions_in_Python/Group1_Build_the_function/00_User_define_function_basic.py
 # Subject : User Define Function
 # Description : Syntax and Basic Example
 # =============================================================================
