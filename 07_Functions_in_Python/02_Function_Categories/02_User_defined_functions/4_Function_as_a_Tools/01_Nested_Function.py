@@ -2,34 +2,52 @@
 # Author  : codingwithamar@gmail.com
 # File    : 01_Nested_Function.py
 # Path    : Python-Programming-Language/07_Functions_in_Python/02_Function_Categories/02_User_defined_functions/4_Function_as_a_Tools/01_Nested_Function.py
-# Subject : User Defined Functions
+# Subject : User Defined Function
 # Description : Nested Function
 # =============================================================================
 
 def main():
-    # Nested function: the inner function can read the outer variable
-    def outer():
-        message = "Hello"
+#%% Basic Concept
+    def outer_function():
 
-        def inner():
-            print(message)         # reads outer's variable
+        def inner_function():
+            print("I am Inner Function")
 
-        inner()
+        print("I am Outer Function")
 
-    outer()                        # Hello
+        inner_function()
 
-    # Closure: the inner function outlives the outer function
-    def make_multiplier(factor):
-        def multiplier(x):
-            return x * factor      # "factor" is remembered
-        return multiplier
+    outer_function()
 
-    double = make_multiplier(2)
-    triple = make_multiplier(3)
+    #OUTPUT :
+    #I am Outer Function
+    #I am Inner Function
 
-    print(double(10))              # 20
-    print(triple(10))              # 30
+#%% Basic Examples
+    def outer_function(a):
 
+        def inner_function(b):
+            return a + b
+
+        result = inner_function(20)
+
+        return result
+
+    answer = outer_function(10)
+
+    print(answer)
+
+#%% Advanced Example
+    def outer_function():
+
+        def inner_function():
+            print("Hello from Inner Function")
+
+        return inner_function
+
+    result = outer_function()
+
+    result()
 
 if __name__ == "__main__":
     main()
