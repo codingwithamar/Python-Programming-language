@@ -7,6 +7,47 @@
 # =============================================================================
 
 def main():
+#%% Example 1: Without Lambda (using def):
+    def CheckEven(No):
+        return (No % 2 == 0)
+
+    Data = [13,12,8,10,11,20]
+    print("Input Data is : ", Data)
+
+    #FData = filter(CheckEven,Data) #Iterable <- filter(Iterable,Function)
+    FData = list(filter(CheckEven,Data))
+    print("Data after filter : ",FData)
+
+    '''
+    OUTPUT :
+    Input Data is :  [13, 12, 8, 10, 11, 20]
+    Data after filter :  [12, 8, 10, 20]
+    '''
+
+#%% Example 2: With Lambda
+    CheckEven = lambda No : (No % 2 == 0)
+
+    def main():
+        Data = [13,12,8,10,11,20]
+        print("Input Data is : ", Data)
+        FData = list(filter(CheckEven,Data))
+        print("Data after filter : ",FData)
+
+    '''
+    OUTPUT :
+    Input Data is :  [13, 12, 8, 10, 11, 20]
+    Data after filter :  [12, 8, 10, 20]
+    '''
+
+
+
+
+
+
+
+
+
+#%% Another some examples
     print("Synatax : map(function, iterable, *more_iterables)")
     numbers = ["1", "2", "3"]
     print(list(map(int, numbers)))              # [1, 2, 3]

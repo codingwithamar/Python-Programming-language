@@ -7,6 +7,42 @@
 # =============================================================================
 
 def main():
+#%% Example 1: Without Lambda (using def):
+    def CheckEven(No):
+        return (No % 2 == 0)
+
+    def Increment(No):
+        return No+1
+
+    Data = [13,12,8,10,11,20]
+    print("Input Data is : ", Data)
+    FData = list(filter(CheckEven,Data))
+    MData = list(map(Increment,FData))
+    print("Data after Map : ",MData)
+
+    '''
+    OUTPUT :
+    Input Data is :  [13, 12, 8, 10, 11, 20]
+    Data after Map :  [13, 9, 11, 21]
+    '''
+
+#%% Example 2: With Lambda
+    CheckEven = lambda No : (No % 2 == 0)
+    Increment = lambda No : No+1
+
+    Data = [13,12,8,10,11,20]
+    print("Input Data is : ", Data)
+    FData = list(filter(CheckEven,Data))    #filter
+    MData = list(map(Increment,FData))      #map
+    print("Data after Map : ",MData)
+
+    '''
+    OUTPUT :
+    Input Data is :  [13, 12, 8, 10, 11, 20]
+    Data after Map :  [13, 9, 11, 21]
+    '''
+
+#%% Another Examples
     print("Syntax : filter(function, iterable)")
     numbers = [1, 2, 3, 4, 5, 6]
     evens = list(filter(lambda x: x % 2 == 0, numbers))
