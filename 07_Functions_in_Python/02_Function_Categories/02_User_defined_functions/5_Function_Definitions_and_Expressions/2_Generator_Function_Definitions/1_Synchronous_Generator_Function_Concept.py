@@ -3,7 +3,7 @@
 # File    : 1_Generator_Function_Concept.py
 # Path    : Python-Programming-Language/07_Functions_in_Python/02_Function_Categories/02_User_defined_functions/5_Function_Definitions_and_Expressions/2_Generator_Function_Definitions/1_Generator_Function_Concept.py
 # Subject : User Defined Function
-# Description : Function Definitions/Generator Function Definition/Concept
+# Description : Function Definitions/ Generator Function(Synchronous) Definition/Concept
 # =============================================================================
 import sys
 
