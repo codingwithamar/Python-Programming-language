@@ -1,9 +1,9 @@
 # =============================================================================
 # Author  : codingwithamar@gmail.com
 # File    : 1_Special_Module_Attribute.py
-# Path    : Python-Programming-Language/08_Modules_And_Packages_In_Python/6_Types_of_Modules/Special_Module_Attributes/1_Special_Module_Attribute.py
+# Path    : Python-Programming-Language/08_Modules_And_Packages_In_Python/6_Types_of_Modules/Module_Attributes/1_Concept_Module_Attribute.py
 # Subject : # Subject : Modules and Packages in Python
-# Description : Special module attributes
+# Description : Concept of Module attributes
 # =============================================================================
 
 import sys
